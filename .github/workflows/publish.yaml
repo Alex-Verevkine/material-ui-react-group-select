@@ -23,8 +23,9 @@ jobs:
         run: npm run lint && npm run test
       - name: 🔨 build
         run: npm run build
-      - name: 🚀 publish
+      - name: 🔨 set npm config
         run: npm config set '//registry.npmjs.org/:_authToken' "${{ secrets.NPM_TOKEN }}"
+      - name: 🚀 publish
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
