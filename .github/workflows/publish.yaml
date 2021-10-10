@@ -17,5 +17,7 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org
+      - name: install node modules
+        run: npm install
       - name: 🚀 build
         run: npm run build
