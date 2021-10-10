@@ -14,12 +14,12 @@ Built on top of the [`material-ui react 6` Autocomplete](https://mui.com/api/aut
 
 ### Install
 
-Install using `npm install test`
+Install using `npm i -S @alex-v/material-ui-react-group-select`
 
 ### Usage
 
 In a React app, use the Button or Badge components:  
-`import GroupSelect from 'test'`
+`import GroupSelect from '@alex-v/material-ui-react-group-select'`
 
 ### GroupSelect props
 
