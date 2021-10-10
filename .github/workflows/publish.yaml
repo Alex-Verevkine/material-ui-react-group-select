@@ -17,7 +17,13 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org
-      - name: install node modules
+      - name: 🔧 install node modules
         run: npm install
-      - name: 🚀 build
+      - name: 🔬	test
+        run: npm run lint && npm run test
+      - name: 🔨 build
         run: npm run build
+      - name: 🚀 publish
+        run: npm publish --access publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
