@@ -13,7 +13,6 @@ import {
     CheckBoxOutlineBlank as CheckBoxOutlineBlankIcon,
     CheckBox as CheckBoxIcon
 } from "@mui/icons-material";
-import { placeholder } from "@babel/types";
 
 const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
 const checkedIcon = <CheckBoxIcon fontSize="small" />;
@@ -53,7 +52,6 @@ const GroupSelect = ({
     }, options);
 
     useEffect(() => {
-        console.log("selectedValues", selectedValues);
         if (notInitialRender.current) {
             onChange(selectedValues);
         } else {
@@ -62,7 +60,6 @@ const GroupSelect = ({
     }, [selectedValues.length]);
 
     const handleValuesChange = (selectedValues = [], reason, details) => {
-        console.log("handleValuesChange", selectedValues, reason, details);
         const updatedValues = selectedValues.filter(
             ({ groupId, groupRef }) => !groupId && !groupRef
         );
