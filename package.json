@@ -1,7 +1,29 @@
 {
   "name": "material-ui-react-group-select",
+  "author": "Alex Verevkine",
+  "keywords": [
+    "react",
+    "components",
+    "material-ui",
+    "material-ui-rect",
+    "mui",
+    "autoselect",
+    "select",
+    "dropdown"
+  ],
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex-Verevkine/material-ui-react-group-select.git"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
