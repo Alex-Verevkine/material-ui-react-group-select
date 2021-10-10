@@ -22,7 +22,8 @@
   "devDependencies": {
     "@babel/cli": "^7.13.14",
     "@babel/core": "^7.13.14",
-    "@babel/preset-env": "^7.13.12"
+    "@babel/preset-env": "^7.13.12",
+    "husky": "^7.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -48,5 +49,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test",
+      "pre-push": "npm run build:win"
+    }
   }
 }
