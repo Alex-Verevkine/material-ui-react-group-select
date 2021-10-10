@@ -59,8 +59,6 @@ var _material = require("@mui/material");
 
 var _iconsMaterial = require("@mui/icons-material");
 
-var _types = require("@babel/types");
-
 var _excluded = ["options", "values", "onChange", "label", "placeholder"];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -156,8 +154,6 @@ var GroupSelect = function GroupSelect(_ref) {
     }, {}));
   }, options);
   (0, _react.useEffect)(function () {
-    console.log("selectedValues", selectedValues);
-
     if (notInitialRender.current) {
       onChange(selectedValues);
     } else {
@@ -169,7 +165,6 @@ var GroupSelect = function GroupSelect(_ref) {
     var selectedValues = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
     var reason = arguments.length > 1 ? arguments[1] : undefined;
     var details = arguments.length > 2 ? arguments[2] : undefined;
-    console.log("handleValuesChange", selectedValues, reason, details);
     var updatedValues = selectedValues.filter(function (_ref4) {
       var groupId = _ref4.groupId,
           groupRef = _ref4.groupRef;

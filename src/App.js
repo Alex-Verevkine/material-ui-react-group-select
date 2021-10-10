@@ -1,5 +1,5 @@
 import React from "react";
-import GroupSelect from "./lib/components";
+import GroupSelect from "./lib";
 import { Box } from "@mui/material";
 import options from "./mockData.json";
 
