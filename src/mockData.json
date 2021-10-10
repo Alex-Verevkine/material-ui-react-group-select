@@ -1,0 +1,43 @@
+[
+  {
+    "title": "Sleep"
+  },
+  {
+    "title": "Books",
+    "groupId": "books-group"
+  },
+  {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "groupRef": "books-group"
+  },
+  {
+    "title": "Harry Potter and the Chamber of Secrets",
+    "groupRef": "books-group"
+  },
+  {
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "groupRef": "books-group"
+  },
+  { "title": "Harry Potter and the Goblet of Fire", "groupRef": "books-group" },
+  {
+    "title": "Harry Potter and the Order of the Phoenix",
+    "groupRef": "books-group"
+  },
+  {
+    "title": "Harry Potter and the Half-Blood Prince",
+    "groupRef": "books-group"
+  },
+  {
+    "title": "Harry Potter and the Deathly Hallows",
+    "groupRef": "books-group"
+  },
+  { "title": "The Hobbit.", "groupRef": "books-group" },
+  { "title": "The Lord of the Rings", "groupRef": "books-group" },
+  {
+    "title": "Computer Games",
+    "groupId": "computer-games-group"
+  },
+  { "title": "World of Warcraft", "groupRef": "computer-games-group" },
+  { "title": "Diablo 3", "groupRef": "computer-games-group" },
+  { "title": "The Witcher 3 Wild Hunt", "groupRef": "computer-games-group" }
+]
