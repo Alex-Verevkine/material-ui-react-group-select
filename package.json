@@ -23,20 +23,18 @@
     "@babel/cli": "^7.13.14",
     "@babel/core": "^7.13.14",
     "@babel/preset-env": "^7.13.12",
-    "husky": "^4.3.0"
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "prettier": "^2.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build:mac": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
-    "build:win": "rimraf dist && SET NODE_ENV=production && babel src/lib --out-dir dist --copy-files",
+    "lint": "eslint src\\**\\*.js",
+    "build": "rimraf dist && SET NODE_ENV=production && babel src/lib --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
@@ -49,11 +47,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test",
-      "pre-push": "npm run build:win"
-    }
   }
 }
