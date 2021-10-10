@@ -21,12 +21,6 @@ Install using `npm install test`
 In a React app, use the Button or Badge components:  
 `import GroupSelect from 'test'`
 
-    options = [],
-    values = [],
-    onChange = noop,
-    label = '',
-    placeholder = '',
-
 ### GroupSelect props
 
 | Name        | Description                                                                                                                                                                         |
