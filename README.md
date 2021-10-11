@@ -1,6 +1,6 @@
 # Group Select
 
-Built on top of the [`material-ui react 6` Autocomplete](https://mui.com/api/autocomplete/) Component.
+Built on top of the [`material-ui react 5` Autocomplete](https://mui.com/api/autocomplete/) Component.
 
 ### Capabilities:
 
